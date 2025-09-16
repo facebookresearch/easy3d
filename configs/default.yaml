@@ -1,0 +1,26 @@
+general:
+  epochs: 1024
+  val_interval: 10
+  log_interval: 10
+  fp16: true
+  pretrained_model: null
+
+data:
+  data_root: /data/agile3d/ScanNet
+  num_query: 4 # for every GPU
+  voxel_size: 0.05 # [m]
+  max_scene_size: 40 # [m]
+
+model:
+  embedding_dim: 256
+  mlp_dim: 1024
+  num_clicks: 10
+
+optimizer:
+  type: AdamW
+  lr: 0.0001
+  weight_decay: 0.05
+
+lr_scheduler:
+  type: PolyLR
+  power: 0.9
