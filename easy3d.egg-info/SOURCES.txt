@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+easy3d.egg-info/PKG-INFO
+easy3d.egg-info/SOURCES.txt
+easy3d.egg-info/dependency_links.txt
+easy3d.egg-info/top_level.txt
